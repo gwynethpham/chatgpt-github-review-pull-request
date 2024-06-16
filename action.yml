@@ -1,0 +1,25 @@
+name: chatgpt-github-review-pull-request
+description: GitHub action that adds ChatGPT code review comments to pull requests
+inputs:
+  model:
+    description: 'OpenAI model'
+    default: 'gpt-4-turbo'
+    required: false
+  max_tokens:
+    description: 'max TPM for OpenAI'
+    default: 4096
+    required: false
+  language:
+    description: 'Choose language that you want to ChatGPT reply'
+    default: 'english'
+    required: false
+  prompt:
+    description: ''
+    default: 'I want you to act as a Senior developer. Below is a code patch, please help me do a brief code review on it. Any bug risks and/or improvement suggestions are welcome'
+    required: false
+runs:
+  using: node16
+  main: dist/index.js
+branding:
+  icon: 'message-circle'
+  color: 'yellow'

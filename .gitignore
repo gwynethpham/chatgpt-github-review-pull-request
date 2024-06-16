@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Buid files
+dist/*
+!dist/index.js
+!dist/sourcemap-register.js
+!dist/encoder.json
+!dist/vocab.bpe
+
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+
+.env
