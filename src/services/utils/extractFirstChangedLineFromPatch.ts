@@ -6,7 +6,7 @@ const extractFirstChangedLineFromPatch = (patch: string) => {
   let firstChangedLine = 1;
 
   if (lineHeaderMatch) {
-    firstChangedLine = lines.length - 1;
+    firstChangedLine = parseInt(lineHeaderMatch[1], 10);
   }
 
   return firstChangedLine;
