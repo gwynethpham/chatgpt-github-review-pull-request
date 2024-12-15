@@ -55,7 +55,7 @@ const getOpenAiSuggestions = (patch) => __awaiter(void 0, void 0, void 0, functi
             body: JSON.stringify({
                 model: OPENAI_MODEL,
                 messages: [
-                    { role: 'system', content: promptsConfig_1.default[promptsConfig_1.Prompt.IMPROVE_MENNT] },
+                    { role: 'system', content: promptsConfig_1.default[promptsConfig_1.Prompt.SYSTEM_PROMPT] },
                     { role: 'user', content: patch },
                 ],
             }),
