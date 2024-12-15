@@ -23,7 +23,7 @@ const getOpenAiSuggestions = async (patch: string): Promise<any> => {
       body: JSON.stringify({
         model: OPENAI_MODEL,
         messages: [
-          { role: 'system', content: promptsConfig[Prompt.SYSTEM_PROMPT] },
+          { role: 'system', content: promptsConfig[Prompt.IMPROVE_MENNT] },
           { role: 'user', content: patch },
         ],
       }),
