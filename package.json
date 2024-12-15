@@ -17,7 +17,7 @@
     "@actions/github": "^5.1.1",
     "gpt-3-encoder": "^1.1.4",
     "node-fetch": "^3.3.1",
-    "openai": "^3.2.1",
+    "openai": "^4.76.3",
     "typescript": "5.0.4"
   },
   "devDependencies": {
